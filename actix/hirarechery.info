@@ -1,0 +1,41 @@
+my_actix_app/
+├── Cargo.toml
+├── Cargo.lock
+├── src/
+│   ├── main.rs              # Entry point of the application
+│   ├── routes/              # Handlers and route definitions
+│   │   ├── mod.rs           # Exports all route modules
+│   │   ├── user_routes.rs   # Routes related to users
+│   │   ├── product_routes.rs # Routes related to products
+│   ├── handlers/            # Request handlers
+│   │   ├── mod.rs           # Exports all handler modules
+│   │   ├── user_handlers.rs # Handlers for user-related routes
+│   │   ├── product_handlers.rs # Handlers for product-related routes
+│   ├── models/              # Data models and structures
+│   │   ├── mod.rs           # Exports all model modules
+│   │   ├── user.rs          # User model
+│   │   ├── product.rs       # Product model
+│   ├── services/            # Business logic and service layer
+│   │   ├── mod.rs           # Exports all service modules
+│   │   ├── user_service.rs  # Service logic for users
+│   │   ├── product_service.rs # Service logic for products
+│   ├── repositories/        # Database interaction layer
+│   │   ├── mod.rs           # Exports all repository modules
+│   │   ├── user_repository.rs # Database operations for users
+│   │   ├── product_repository.rs # Database operations for products
+│   ├── utils/               # Utility functions and helpers
+│   │   ├── mod.rs           # Exports all utility modules
+│   │   ├── error_handling.rs # Custom error handling
+│   │   ├── logging.rs       # Logging utilities
+│   ├── config/              # Configuration files
+│   │   ├── mod.rs           # Exports all config modules
+│   │   ├── app_config.rs    # Application configuration
+│   │   ├── db_config.rs     # Database configuration
+├── migrations/              # Database migrations (if using SQLx or Diesel)
+│   ├── 20231010120000_create_users_table.rs
+│   ├── 20231010120001_create_products_table.rs
+├── tests/                   # Integration and unit tests
+│   ├── user_tests.rs        # Tests for user-related functionality
+│   ├── product_tests.rs     # Tests for product-related functionality
+├── .env                     # Environment variables
+├── .gitignore               # Git ignore file
