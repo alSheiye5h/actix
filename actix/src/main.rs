@@ -6,7 +6,7 @@ mod routes;
 
 use handlers::{hello, echo, manual_hello, index, get_app_name};
 use models::AppStateStruct;
-use routes::get_the_user
+use routes::get_the_user;
 
 
 // #[actix_web::main]
