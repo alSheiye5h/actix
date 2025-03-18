@@ -1,6 +1,7 @@
+use serde::Serialize;
 
-
-struct User {
-    name: String,
-    age: i32
+#[derive(Serialize)]
+pub struct User {
+    pub name: String,
+    pub age: i32
 }

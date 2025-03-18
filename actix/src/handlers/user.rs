@@ -1,11 +1,12 @@
-use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
+use actix_web::{HttpResponse, Responder};
 
 use crate::models::UserStruct;
 
 pub async fn get_user() -> impl Responder {
-    let bodyResponse: UserStruct = UserStruct(
+    let body_response = UserStruct {
         name: String::from("anas"),
-        age: 21
-    )
-    HttpResponse::ok().body(bodyResponse)
+        age: 21,
+    };
+
+    HttpResponse::Ok().json(body_response) 
 }
