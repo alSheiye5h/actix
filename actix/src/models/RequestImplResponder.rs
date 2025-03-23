@@ -4,11 +4,11 @@ use actix_web::{
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
-pub struct RequestImplResponderObj {
-    pub name: &'static str,
+pub struct RequestImplResponderObj<'a> {
+    pub name: &'a str,
 }
 
-impl Responder for RequestImplResponderObj {
+impl Responder for RequestImplResponderObj<'_> {
     type Body = BoxBody;
 
     fn respond_to(self, _req: &HttpRequest) -> HttpResponse<Self::Body> {
@@ -16,5 +16,13 @@ impl Responder for RequestImplResponderObj {
         HttpResponse::Ok()
         .content_type(ContentType::json())
         .body(body)
+    }
+}
+
+
+impl<'a> RequestImplResponder<'a> {
+    // Implement the `from` function that takes a reference with lifetime `'a`
+    fn from(strr: &'a str) -> Self {
+        RequestImplResponder { name: strr }
     }
 }
