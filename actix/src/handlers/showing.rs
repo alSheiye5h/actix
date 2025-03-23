@@ -21,7 +21,6 @@ pub async fn index() -> impl Responder {
 }
 
 
-pub async fn get_app_name(data: web::Data<AppStateStruct>) -> String {
-    let app_name = &data.app_name;
-    format!("your data : {app_name}!")
+pub async fn get_app_name() -> impl Responder {
+    HttpResponse::Ok().body("Your App Name Here")
 }

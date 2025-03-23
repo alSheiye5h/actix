@@ -1,0 +1,1 @@
+fn(actix_web::web::Query<{type error}>, Json<{type error}>) -> impl std::future::Future<Output = std::string::String> {<info_route::query_body_extract as HttpServiceFactory>::register::query_body_extract}

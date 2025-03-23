@@ -9,7 +9,8 @@ mod utils;
 use handlers::{hello, echo, manual_hello, index, get_app_name, check_username};
 use models::AppStateStruct;
 use routes::{get_the_user, get_user_data};
-use handlers::query_extract;
+// use handlers::query_extract; // will trigger error
+// use handlers::query_body_extract;   // will trigger error
 
 // #[actix_web::main]
 // async fn main() -> std::io::Result<()> {
@@ -55,7 +56,8 @@ async fn main() -> std::io::Result<()> {
             .route("/info", web::get().to(get_app_name)),
         )
         .service(check_username)
-        .service(query_extract)
+        // .service(query_extract)   // will trigger error
+        // .service(query_body_extract)   // will trigger error
         .app_data(
             web::Data::new(
                 AppStateStruct {
@@ -63,8 +65,8 @@ async fn main() -> std::io::Result<()> {
                 }
             )
         )
-        .configure(get_the_user)
-        .configure(get_user_data)
+        // .configure(get_the_user)
+        // .configure(get_user_data)
     })
     .workers(1) // workers are system threads number to handle requests
     .bind("127.0.0.1:8080")?

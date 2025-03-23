@@ -1,0 +1,1 @@
+fn(actix_web::web::Query<QueryStruct>, Json<QueryBodyStruct>) -> impl std::future::Future<Output = std::string::String> {query_body_extract}

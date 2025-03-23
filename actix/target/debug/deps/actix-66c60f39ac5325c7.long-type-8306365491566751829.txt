@@ -1,0 +1,1 @@
+fn(Form<QueryStruct>, Json<{type error}>, actix_web::web::Query<QueryStruct>) -> impl std::future::Future<Output = std::string::String> {post_handle}

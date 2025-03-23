@@ -1,0 +1,1 @@
+fn(actix_web::web::Query<std::string::String>, Form<{type error}>) -> impl std::future::Future<Output = std::string::String> {get_handle}

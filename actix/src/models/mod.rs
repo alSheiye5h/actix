@@ -12,4 +12,4 @@ pub mod Query;
 pub use Query::QueryStruct;
 
 pub mod QueryBody;
-pub use QueryBody::QueryBodyStruct
+pub use QueryBody::QueryBodyStruct;
