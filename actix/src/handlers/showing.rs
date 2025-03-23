@@ -2,9 +2,6 @@ use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 
 use crate::models::{self, AppStateStruct};
 
-
-
-
 #[get("/")]
 async fn hello() -> impl Responder {
     HttpResponse::Ok().body("Hello world!")
