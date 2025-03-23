@@ -9,6 +9,13 @@ mod utils;
 use handlers::{hello, echo, manual_hello, index, get_app_name, check_username};
 use models::AppStateStruct;
 use routes::{get_the_user, get_user_data};
+use handlers::request_handlers::return_static_str;
+use handlers::request_handlers::return_string;
+use handlers::request_handlers::return_bytes;
+use handlers::request_handlers::get_RequestImplResponderObj;
+
+
+
 // use handlers::query_extract; // will trigger error
 // use handlers::query_body_extract;   // will trigger error
 
@@ -54,6 +61,13 @@ async fn main() -> std::io::Result<()> {
             web::scope("/app")
             .route("/index", web::get().to(index))
             .route("/info", web::get().to(get_app_name)),
+        )
+        .service(
+            web::scope("/reqhandle")
+            .route("/one", web::get().to(return_static_str))
+            .route("/two", web::get().to(return_string))
+            .route("/three", web::get().to(return_bytes)) // this downloads a file
+            .route("/four", web::get().to(get_RequestImplResponderObj))
         )
         .service(check_username)
         // .service(query_extract)   // will trigger error
