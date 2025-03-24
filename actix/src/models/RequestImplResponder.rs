@@ -20,9 +20,9 @@ impl Responder for RequestImplResponderObj<'_> {
 }
 
 
-impl<'a> RequestImplResponder<'a> {
+impl<'a> RequestImplResponderObj<'a> {
     // Implement the `from` function that takes a reference with lifetime `'a`
     fn from(strr: &'a str) -> Self {
-        RequestImplResponder { name: strr }
+        RequestImplResponderObj { name: strr }
     }
 }

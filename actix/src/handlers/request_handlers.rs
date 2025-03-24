@@ -17,6 +17,7 @@ pub async fn return_bytes(_req: HttpRequest) -> impl Responder {  // this downlo
 }
 
 pub async fn get_RequestImplResponderObj(info: web::Query<RequestImplResponderObj<'_>>) -> impl Responder {
-    let name = info.name;
-    RequestImplResponderObj::from(name)
+    // let name = info.name;
+    // RequestImplResponderObj::from(name)
+    RequestImplResponderObj {name : "user"}
 }

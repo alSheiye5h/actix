@@ -6,6 +6,7 @@ pub mod data;
 pub mod username;
 pub mod query;
 pub mod request_handlers;
+pub mod post_videos;
 
 pub use showing::{hello, echo, manual_hello, index, get_app_name};
 pub use user::get_user;
@@ -18,3 +19,4 @@ pub use request_handlers::return_static_str;
 pub use request_handlers::return_string;
 pub use request_handlers::return_bytes;
 pub use request_handlers::get_RequestImplResponderObj;
+pub use post_videos::post_video;

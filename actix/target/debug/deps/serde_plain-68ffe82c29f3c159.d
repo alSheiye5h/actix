@@ -1,0 +1,11 @@
+/home/al-shaye5h/Dev/rust/actix/target/debug/deps/libserde_plain-68ffe82c29f3c159.rmeta: /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/lib.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/de.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/error.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/macros.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/ser.rs
+
+/home/al-shaye5h/Dev/rust/actix/target/debug/deps/libserde_plain-68ffe82c29f3c159.rlib: /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/lib.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/de.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/error.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/macros.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/ser.rs
+
+/home/al-shaye5h/Dev/rust/actix/target/debug/deps/serde_plain-68ffe82c29f3c159.d: /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/lib.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/de.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/error.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/macros.rs /home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/ser.rs
+
+/home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/lib.rs:
+/home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/de.rs:
+/home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/error.rs:
+/home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/macros.rs:
+/home/al-shaye5h/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_plain-1.0.2/src/ser.rs:

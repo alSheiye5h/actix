@@ -17,3 +17,6 @@ pub use QueryBody::QueryBodyStruct;
 pub mod RequestImplResponder;
 pub use RequestImplResponder::RequestImplResponderObj;
 
+pub mod Multipart;
+pub use Multipart::{Metadata, UploadForm};
+

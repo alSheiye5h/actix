@@ -13,6 +13,7 @@ use handlers::request_handlers::return_static_str;
 use handlers::request_handlers::return_string;
 use handlers::request_handlers::return_bytes;
 use handlers::request_handlers::get_RequestImplResponderObj;
+use handlers::post_video;
 
 
 
@@ -62,14 +63,15 @@ async fn main() -> std::io::Result<()> {
             .route("/index", web::get().to(index))
             .route("/info", web::get().to(get_app_name)),
         )
-        .service(
-            web::scope("/reqhandle")
-            .route("/one", web::get().to(return_static_str))
-            .route("/two", web::get().to(return_string))
-            .route("/three", web::get().to(return_bytes)) // this downloads a file
-            .route("/four", web::get().to(get_RequestImplResponderObj))
-        )
+        // .service(
+        //     web::scope("/reqhandle")
+        //     .route("/one", web::get().to(return_static_str))
+        //     .route("/two", web::get().to(return_string))
+        //     .route("/three", web::get().to(return_bytes)) // this downloads a file
+        //     .route("/four", web::get().to(get_RequestImplResponderObj))
+        // )
         .service(check_username)
+        .service(post_video)
         // .service(query_extract)   // will trigger error
         // .service(query_body_extract)   // will trigger error
         .app_data(
